@@ -1,0 +1,38 @@
+[
+    {
+      "category_id": "C001",
+      "category_name": "Laptops",
+      "description": "Portable computers suitable for a variety of tasks."
+    },
+    {
+      "category_id": "C002",
+      "category_name": "Phones",
+      "description": "Smartphones with advanced features for communication and media."
+    },
+    {
+      "category_id": "C003",
+      "category_name": "Accessories",
+      "description": "Various accessories to enhance your devices."
+    },
+    {
+      "category_id": "C004",
+      "category_name": "Smart Watches",
+      "description": "Wearable devices that offer fitness tracking and smart features."
+    },
+    {
+      "category_id": "C005",
+      "category_name": "MacBook",
+      "description": "Apple's line of portable computers known for their performance and design."
+    },
+    {
+      "category_id": "C006",
+      "category_name": "iPhone",
+      "description": "Apple's line of smartphones with iOS operating system."
+    },
+    {
+      "category_id": "C007",
+      "category_name": "Tablets",
+      "description": "Portable touchscreen devices for browsing and entertainment."
+    }
+  ]
+  
