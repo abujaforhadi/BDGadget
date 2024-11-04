@@ -3,7 +3,7 @@ import HeaderImage from "./HeaderImage";
 function Hero() {
   return (
     <div className="relative">
-      <div className="hero bg-customPurple text-white rounded-b-3xl pb-36">
+      <div className="hero bg-customPurple text-white rounded-b-3xl pb-24 md:pb-36">
         <div className="hero-content text-center">
           <div className="w-2/3 mx-auto">
             <h1 className="text-5xl font-bold py-8">
@@ -21,7 +21,7 @@ function Hero() {
         </div>
       </div>
       <div className="flex justify-center">
-        <div className="absolute  -mt-36">
+        <div className="absolute -mt-20 md:-mt-36">
           <HeaderImage />
         </div>
       </div>
