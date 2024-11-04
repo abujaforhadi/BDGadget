@@ -1,5 +1,5 @@
 [
-    {
+  {
       "product_id": "L001",
       "product_title": "Acer Nitro 5",
       "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/Acer-Nitro-5-AN515-a-1037.jpg",
@@ -11,8 +11,8 @@
       "rating": 4.7,
       "brand": "GameTech",
       "warranty": "2 years"
-    },
-    {
+  },
+  {
       "product_id": "P001",
       "product_title": "Redmi Note 13 Pro 5G",
       "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/Redmi-Note-13-Pro-Violet-9748.jpg",
@@ -24,21 +24,8 @@
       "rating": 4.6,
       "brand": "SmartPlus",
       "warranty": "1 year"
-    },
-    {
-      "product_id": "A001",
-      "product_title": "Baseus Wireless Charger",
-      "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/Baseus-Digital-LED-Display-GEN2-Wireless-Charger-15W-c-3343.jpg",
-      "category": "Accessories",
-      "price": 29.99,
-      "description": "Compact and fast-charging portable power bank.",
-      "Specification": ["10000mAh", "USB-C Compatible"],
-      "availability": true,
-      "rating": 4.3,
-      "brand": "PowerX",
-      "warranty": "6 months"
-    },
-    {
+  },
+  {
       "product_id": "L002",
       "product_title": "Lenovo IdeaPad Slim 3",
       "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/Lenovo-IdeaPad-Slim-3-15IAH8-a-8606.jpg",
@@ -50,8 +37,8 @@
       "rating": 4.5,
       "brand": "OfficeMate",
       "warranty": "1 year"
-    },
-    {
+  },
+  {
       "product_id": "P002",
       "product_title": "Galaxy A55 5G",
       "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-A55-5G-Navy-3452.jpg",
@@ -63,25 +50,12 @@
       "rating": 4.1,
       "brand": "EasyPhone",
       "warranty": "1 year"
-    },
-    {
-      "product_id": "A002",
-      "product_title": "Haylou Mori Pro",
-      "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/Haylou-Mori-Pro-TWS-Earbuds-2240.jpg",
-      "category": "Accessories",
-      "price": 49.99,
-      "description": "Noise-canceling wireless earbuds with deep bass.",
-      "Specification": ["Bluetooth 5.0", "12-hour battery"],
-      "availability": true,
-      "rating": 4.4,
-      "brand": "AudioX",
-      "warranty": "1 year"
-    },
-    {
+  },
+  {
       "product_id": "SW001",
       "product_title": "Fitbit Sense 2",
       "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/Fitbit-Sense-2-Fitness-Smartwatch-Lunar-White-1741.jpg",
-      "category": "Smart Watches",
+      "category": "Accessories",
       "price": 149.99,
       "description": "Track fitness and monitor health with this stylish smart watch.",
       "Specification": ["Heart rate monitor", "GPS", "Water-resistant"],
@@ -89,12 +63,25 @@
       "rating": 4.3,
       "brand": "FitWatch",
       "battery_life": "7 days"
-    },
-    {
+  },
+  {
+      "product_id": "M003",
+      "product_title": "MacBook Air M3",
+      "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/MacBook-Air-M3-13-Inch-Midnight-7621.jpg",
+      "category": "Laptops",
+      "price": 1199.99,
+      "description": "Lightweight and efficient MacBook Air powered by the new M3 chip, ideal for everyday productivity and creativity.",
+      "Specification": ["M3 Chip", "8GB RAM", "256GB SSD"],
+      "availability": true,
+      "rating": 4.8,
+      "brand": "Apple",
+      "warranty": "1 year"
+  },
+  {
       "product_id": "M001",
       "product_title": "MacBook Air M2",
       "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/MacBook-Air-M2-Space-Gray-5005.jpg",
-      "category": "MacBook",
+      "category": "Laptops",
       "price": 999.99,
       "description": "Lightweight MacBook with excellent battery life.",
       "Specification": ["M2 Chip", "8GB RAM", "256GB SSD"],
@@ -102,12 +89,12 @@
       "rating": 4.8,
       "brand": "Apple",
       "warranty": "1 year"
-    },
-    {
+  },
+  {
       "product_id": "IP001",
       "product_title": "iPhone 16 Pro",
       "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/iPhone-16-Pro-Max---16-Pro-Black-Titanium-2734.jpg",
-      "category": "iPhone",
+      "category": "Phones",
       "price": 799.99,
       "description": "Latest iPhone with advanced camera system and performance.",
       "Specification": ["5G", "128GB Storage", "Dual 12MP Cameras"],
@@ -115,8 +102,8 @@
       "rating": 4.7,
       "brand": "Apple",
       "warranty": "1 year"
-    },
-    {
+  },
+  {
       "product_id": "L003",
       "product_title": "Gaming Laptop Pro",
       "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/Hp-Envy-x360-14-fa0023dx-4872.jpg",
@@ -128,8 +115,8 @@
       "rating": 4.9,
       "brand": "GameTech",
       "warranty": "3 years"
-    },
-    {
+  },
+  {
       "product_id": "P003",
       "product_title": "Poco X6 Neo 5G",
       "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/Poco-X6-Neo-5G-Astral-Black-8655.jpg",
@@ -141,25 +128,12 @@
       "rating": 4.5,
       "brand": "SmartPlus",
       "warranty": "1 year"
-    },
-    {
-      "product_id": "A003",
-      "product_title": "SwitchEasy Candy ",
-      "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/4399-30224.jpg",
-      "category": "Accessories",
-      "price": 39.99,
-      "description": "Multi-port USB-C hub for enhanced connectivity.",
-      "Specification": ["HDMI", "USB 3.0", "Ethernet"],
-      "availability": true,
-      "rating": 4.6,
-      "brand": "TechConnect",
-      "warranty": "1 year"
-    },
-    {
+  },
+  {
       "product_id": "SW002",
       "product_title": "IMILAB IMIKI TG2",
       "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/IMILAB-IMIKI-TG2-Bluetooth-Calling-Smart-Watch-Silicon-Strap-8369.jpg",
-      "category": "Smart Watches",
+      "category": "Accessories",
       "price": 99.99,
       "description": "Monitor your health with this smart fitness tracker.",
       "Specification": ["Sleep tracking", "Heart rate monitor"],
@@ -167,12 +141,12 @@
       "rating": 4.2,
       "brand": "FitTrack",
       "battery_life": "10 days"
-    },
-    {
+  },
+  {
       "product_id": "M002",
       "product_title": "MacBook Pro",
       "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/2733-60765.jpg",
-      "category": "MacBook",
+      "category": "Laptops",
       "price": 1999.99,
       "description": "Powerful MacBook designed for professionals.",
       "Specification": ["M1 Pro", "16GB RAM", "512GB SSD"],
@@ -180,12 +154,12 @@
       "rating": 4.8,
       "brand": "Apple",
       "warranty": "1 year"
-    },
-    {
+  },
+  {
       "product_id": "IP002",
       "product_title": "iPhone 15",
       "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/iPhone-15-Plus-(6)-2055.jpg",
-      "category": "iPhone",
+      "category": "Phones",
       "price": 999.99,
       "description": "Latest iPhone with improved features and design.",
       "Specification": ["5G", "256GB Storage", "Triple 12MP Cameras"],
@@ -193,6 +167,5 @@
       "rating": 4.8,
       "brand": "Apple",
       "warranty": "1 year"
-    }
-  ]
-  
+  }
+]

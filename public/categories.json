@@ -14,21 +14,8 @@
       "category_name": "Accessories",
       "description": "Various accessories to enhance your devices."
     },
-    {
-      "category_id": "C004",
-      "category_name": "Smart Watches",
-      "description": "Wearable devices that offer fitness tracking and smart features."
-    },
-    {
-      "category_id": "C005",
-      "category_name": "MacBook",
-      "description": "Apple's line of portable computers known for their performance and design."
-    },
-    {
-      "category_id": "C006",
-      "category_name": "iPhone",
-      "description": "Apple's line of smartphones with iOS operating system."
-    },
+    
+
     {
       "category_id": "C007",
       "category_name": "Tablets",

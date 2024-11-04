@@ -1,9 +1,8 @@
-import { useLoaderData } from "react-router-dom";
+import { NavLink, Outlet, useLoaderData } from "react-router-dom";
 import Hero from "../Components/Hero";
-import Card from "../Components/Card";
 
 function Home() {
-  const { products, categories } = useLoaderData();
+  const categories = useLoaderData();
 
   return (
     <>
@@ -14,25 +13,30 @@ function Home() {
         Explore Our Gadgets
       </h1>
       <div className="flex gap-4">
-        {/* Category Sidebar */}
-        <div className="w-1/4  px-2">
+        {/* Dynamic Category Items */}
+        <div className="w-1/4 px-2">
           <div className="grid gap-2 justify-center">
             {categories.map((category) => (
-              <button
+              <NavLink
+                to={`/categories/${category.category_name}`}
                 key={category.id}
-                className="btn btn-outline w-full text-left px-4 py-2"
+                className={({ isActive }) =>
+                  `btn btn-outline w-full text-left px-4 py-2 ${
+                    isActive ? "bg-customPurple text-white" : ""
+                  }`
+                }
               >
                 {category.category_name}
-              </button>
+              </NavLink>
             ))}
           </div>
         </div>
 
         {/* Product Cards */}
-        <div className="w-3/4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {products.map((product) => (
-            <Card key={product.product_id} product={product} />
-          ))}
+        <div className="w-3/4">
+          <div className="">
+            <Outlet /> {/* Renders the selected category’s products */}
+          </div>
         </div>
       </div>
     </>

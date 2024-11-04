@@ -8,3 +8,7 @@
 body {
   font-family: 'Sora', sans-serif;
 }
+
+html{
+  overflow-y: scroll;
+}
