@@ -13,10 +13,10 @@ function Home() {
       <h1 className="py-5 text-center text-3xl font-bold">
         Explore Our Gadgets
       </h1>
-      <div className="flex gap-4">
+      <div className="grid grid-cols-1  md:flex gap-4">
         {/* Dynamic Category Items */}
         <div className="w-1/4 px-2">
-          <div className="grid gap-2 justify-center">
+          <div className="grid gap-2  justify-center items-center">
             {categories.map((category) => (
               <NavLink
                 to={`/categories/${category.category_name}`}

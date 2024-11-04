@@ -1,14 +1,16 @@
+import { useContext } from "react";
 import { FaHeartCirclePlus } from "react-icons/fa6";
 import { useLoaderData, useParams } from "react-router-dom";
+import { SelectedItem, WishlistItem } from "../MainLayout/MainLayout";
 
 function SingleProduct() {
   const data = useLoaderData();
   const { id } = useParams();
   const product = data.find((p) => p.product_id === id);
-
+  const [selectedProduct, setSelectedProduct] = useContext(SelectedItem);
+  const [wishlistProduct, setWishlistProduct] = useContext(WishlistItem);
   return (
     <>
-      
       <div className="w-2/3 mx-auto bg-white rounded-lg shadow-md p-4">
         {product ? (
           <div className="flex text-black">
@@ -52,13 +54,27 @@ function SingleProduct() {
               <p className="text-gray-800 mt-4">Brand: {product.brand}</p>
               <p className="text-gray-800">Warranty: {product.warranty}</p>
               <div className=" flex items-center gap-2">
-              <button className="btn btn-primary  mt-6  bg-customPurple text-white font-semibold hover:bg-purple-700">
-                Add To Cart
-              </button>
-              <button className="btn btn-outline  mt-6  text-customPurple font-semibold">
-              <FaHeartCirclePlus />
+                <button
+                  onClick={() => {
+                    if (!selectedProduct.includes(product.product_id)) {
+                      setSelectedProduct([...selectedProduct, product]);
+                    } else alert("already added in cart");
+                  }}
+                  className="btn btn-primary mt-6 bg-customPurple text-white font-semibold hover:bg-purple-700"
+                >
+                  Add To Cart
+                </button>
 
-              </button>
+                <button
+                  onClick={() => {
+                    if (!wishlistProduct.includes(product.product_id)) {
+                      setWishlistProduct([...wishlistProduct, product]);
+                    } else alert("already added in wishlist");
+                  }}
+                  className="btn btn-outline  mt-6  text-customPurple font-semibold"
+                >
+                  <FaHeartCirclePlus />
+                </button>
               </div>
             </div>
           </div>

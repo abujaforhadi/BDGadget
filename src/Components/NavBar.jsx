@@ -1,22 +1,29 @@
+import { useContext } from "react";
 import { AiOutlineShoppingCart, AiOutlineUnorderedList } from "react-icons/ai";
 import { GiSelfLove } from "react-icons/gi";
 import { Link, NavLink } from "react-router-dom";
+import { SelectedItem, WishlistItem } from "../MainLayout/MainLayout";
 
 function NavBar() {
+  const [selectedProduct] = useContext(SelectedItem);
+  const [wishlistProduct] = useContext(WishlistItem);
+
+
   return (
-    <div className="">
+    <div className="px-5">
       <div className="navbar w-full flex items-center justify-between">
         <div className="navbar-start flex items-center">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <AiOutlineUnorderedList />
             </div>
+
             <ul
               tabIndex={0}
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
               <li>
-                <NavLink to="/">Home</NavLink>
+                <NavLink to="/">Home </NavLink>
               </li>
               <li>
                 <NavLink to="/statistics">Statistics</NavLink>
@@ -43,13 +50,17 @@ function NavBar() {
             </li>
           </ul>
         </div>
-        <div className="navbar-end gap-1">
-          <Link className="btn bg-white rounded-full">
-            <AiOutlineShoppingCart />
-          </Link>
-          <Link className="btn bg-white rounded-full">
-            <GiSelfLove />
-          </Link>
+        <div className="navbar-end gap-3">
+          
+          <div className="indicator">
+            <span className="indicator-item badge badge-secondary text-black bg-white"> {selectedProduct.length}</span>
+            <Link to="/dashboard/cart" className="btn bg-white rounded-full"> <AiOutlineShoppingCart /></Link>
+          </div>
+          <div className="indicator">
+            <span className="indicator-item badge badge-secondary text-black bg-white"> {wishlistProduct.length}</span>
+            <Link to="/dashboard/wishlist" className="btn bg-white rounded-full"> <GiSelfLove /></Link>
+          </div>
+         
         </div>
       </div>
     </div>
