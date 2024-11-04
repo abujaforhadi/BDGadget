@@ -7,7 +7,7 @@ const CardContainer = () => {
   console.log(obj);
 
   const product = useLoaderData();
-  console.log(product);
+  // console.log(product);
   const [products, setProducts] = useState([]);
   useEffect(() => {
     const copyData = [...product];

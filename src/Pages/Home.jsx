@@ -4,6 +4,7 @@ import Hero from "../Components/Hero";
 function Home() {
   const categories = useLoaderData();
 
+
   return (
     <>
       <div className="pb-20 md:pb-96">
@@ -19,7 +20,7 @@ function Home() {
             {categories.map((category) => (
               <NavLink
                 to={`/categories/${category.category_name}`}
-                key={category.id}
+                key={category.category_id}
                 className={({ isActive }) =>
                   `btn btn-outline w-full text-left px-4 py-2 ${
                     isActive ? "bg-customPurple text-white" : ""

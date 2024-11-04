@@ -4,7 +4,7 @@ import Home from "../Pages/Home";
 import Dashboard from "../Pages/Dashboard";
 import Statistics from "../Pages/Statistics";
 import CardContainer from "../Components/CardContainer";
-import ProductDetails from "../Components/ProductDetails";
+import ProductDetails from "../Pages/ProductDetails";
 
 const routes = createBrowserRouter([
   {
