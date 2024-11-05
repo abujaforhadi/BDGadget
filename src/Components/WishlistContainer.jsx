@@ -1,18 +1,19 @@
+
 import { RiDeleteBinFill } from "react-icons/ri";
-import { SelectedItem } from "../MainLayout/MainLayout";
+import { SelectedItem, WishlistItem } from "../MainLayout/MainLayout";
 import { useContext } from "react";
 import { useParams } from "react-router-dom";
 
-function CartComponents({ p }) {
-  const [selectedProduct, setSelectedProduct] = useContext(SelectedItem);
-  const path=useParams()
+function WishlistContainer({ p }) {
+    const [wishlistProduct, setWishlistProduct] = useContext(WishlistItem);
+    const path=useParams()
   console.log(path);
 
   const { product_id, product_title, description, price, product_image } = p;
 
   // Handler to remove item
   const handleRemoveItem = () => {
-    setSelectedProduct(selectedProduct.filter((item) => item.product_id !== product_id));
+    setWishlistProduct(wishlistProduct.filter((item) => item.product_id !== product_id));
   };
 
   return (
@@ -33,4 +34,4 @@ function CartComponents({ p }) {
   );
 }
 
-export default CartComponents;
+export default WishlistContainer;

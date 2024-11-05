@@ -17,8 +17,8 @@ function Dashboard() {
             className={({ isActive }) =>
               `btn text-left px-4 py-2 ${
                 isActive || location.pathname === "/dashboard"
-                  ? "bg-customPurple text-white"
-                  : "text-customPurple"
+                  ?  "text-customPurple"
+                  :"bg-customPurple text-white"
               }`
             }
           >
@@ -28,7 +28,8 @@ function Dashboard() {
             to="/dashboard/wishlist"
             className={({ isActive }) =>
               `btn text-left px-4 py-2 ${
-                isActive ? "bg-customPurple text-white" : "text-customPurple"
+                isActive ?  "text-customPurple"
+                  :"bg-customPurple text-white"
               }`
             }
           >
