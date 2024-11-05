@@ -1,8 +1,13 @@
 import { NavLink, Outlet, useLocation } from "react-router-dom";
 import Heading from "../Components/Heading";
+import { ToastContainer } from "react-toastify";
+import { useEffect } from "react";
 
 function Dashboard() {
   const location = useLocation();
+  useEffect(() => {
+    document.title="DashBoard"
+  },[])
 
   return (
     <div>
@@ -41,6 +46,8 @@ function Dashboard() {
       <div>
         <Outlet />
       </div>
+      <ToastContainer />
+
     </div>
   );
 }

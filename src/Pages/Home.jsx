@@ -9,6 +9,7 @@ function Home() {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   useEffect(() => {
+    document.title="HomePage "
     const categoryFromPath = location.pathname.split("/")[2];
     setSelectedCategory(categoryFromPath ? categoryFromPath : "All");
   }, [location]);

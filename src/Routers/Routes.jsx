@@ -7,6 +7,8 @@ import CardContainer from "../Components/CardContainer";
 import ProductDetails from "../Pages/ProductDetails";
 import Cart from "../Pages/Cart";
 import Wishlist from "../Pages/Wishlist";
+import ErrorPage from "../Pages/ErrorPage";
+import Faq from "../Pages/Faq";
 
 
 
@@ -14,6 +16,7 @@ const routes = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout />,
+    errorElement:<ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
@@ -67,6 +70,10 @@ const routes = createBrowserRouter([
         element: <ProductDetails />,
         loader: () => fetch(`/products.json`),
 
+      },
+      {
+        path: "/faq",
+        element:  <Faq />,
       },
     ],
   },

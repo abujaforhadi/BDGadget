@@ -1,7 +1,13 @@
+import { useEffect } from "react";
 import BarChartPage from "../Components/BarChartPage";
 import Heading from "../Components/Heading";
 
 function Statistics() {
+
+  useEffect(() => {
+    document.title="Statistics"
+  },[])
+
   return (
     <div>
       <div className="bg-customPurple py-5">

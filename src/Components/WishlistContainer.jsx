@@ -3,6 +3,7 @@ import { RiDeleteBinFill } from "react-icons/ri";
 import {  WishlistItem } from "../MainLayout/MainLayout";
 import { useContext } from "react";
 import { useParams } from "react-router-dom";
+import { toast } from "react-toastify";
 
 function WishlistContainer({ p }) {
     const [wishlistProduct, setWishlistProduct] = useContext(WishlistItem);
@@ -14,6 +15,7 @@ function WishlistContainer({ p }) {
   // Handler to remove item
   const handleRemoveItem = () => {
     setWishlistProduct(wishlistProduct.filter((item) => item.product_id !== product_id));
+    toast.error(`${product_title} has been removed from the wishlist`);
   };
 
   return (

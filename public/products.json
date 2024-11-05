@@ -70,7 +70,7 @@
       "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/MacBook-Air-M3-13-Inch-Midnight-7621.jpg",
       "category": "Laptops",
       "price": 1199.99,
-      "description": "Lightweight and efficient MacBook Air powered by the new M3 chip, ideal for everyday productivity and creativity.",
+      "description": "MacBook Air powered by the new M3 chip for everyday .",
       "Specification": ["M3 Chip", "8GB RAM", "256GB SSD"],
       "availability": true,
       "rating": 4.8,
@@ -112,7 +112,7 @@
       "description": "Ultimate gaming laptop for serious gamers.",
       "Specification": ["Intel i9", "32GB RAM", "2TB SSD"],
       "availability": true,
-      "rating": 4.9,
+      "rating": 4,
       "brand": "GameTech",
       "warranty": "3 years"
   },
@@ -125,7 +125,7 @@
       "description": "Great smartphone with balanced performance and price.",
       "Specification": ["4G", "64GB Storage", "16MP Camera"],
       "availability": true,
-      "rating": 4.5,
+      "rating": 3.5,
       "brand": "SmartPlus",
       "warranty": "1 year"
   },
@@ -138,7 +138,7 @@
       "description": "Monitor your health with this smart fitness tracker.",
       "Specification": ["Sleep tracking", "Heart rate monitor"],
       "availability": true,
-      "rating": 4.2,
+      "rating": 3.0,
       "brand": "FitTrack",
       "battery_life": "10 days"
   },

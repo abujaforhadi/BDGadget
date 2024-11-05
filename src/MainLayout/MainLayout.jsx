@@ -19,12 +19,13 @@ function MainLayout() {
   return (
     <WishlistItem.Provider value={[wishlistProduct, setWishlistProduct]}>
       <SelectedItem.Provider value={[selectedProduct, setSelectedProduct]}>
-        <div className="bg-customGray mx-4 md:mx-10">
+        <div className="bg-customGray px-4 md:px-10">
           <div className={`w-full fixed top-0 left-0 ${navBarBgColor} z-10 shadow-md`}>
             <NavBar />
           </div>
+          
 
-          <div className="pt-16 md:pt-16 min-h-[calc(100vh-200px)]">
+          <div className="pt-16 md:pt-16 min-h-[calc(100vh-120px)]">
             <Outlet />
           </div>
 

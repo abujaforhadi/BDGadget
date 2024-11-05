@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { SelectedItem } from "../MainLayout/MainLayout";
 import CartComponents from "../Components/CartComponents";
 import { IoShieldCheckmarkSharp } from "react-icons/io5";
@@ -8,26 +8,26 @@ function Cart() {
   const [isSorted, setIsSorted] = useState(false);
   const [showSuccessModal, setShowSuccessModal] = useState(false);
 
-  // Sort products by price
   const handleSortByPrice = () => {
     const sortedProducts = [...selectedProduct].sort((a, b) => b.price - a.price);
     setSelectedProduct(sortedProducts);
     setIsSorted(true);
   };
 
-  // Calculate total cost
   const totalCost = selectedProduct.reduce((sum, product) => sum + product.price, 0);
 
-  // Show success modal on purchase click
   const handlePurchaseClick = () => {
     setShowSuccessModal(true);
   };
 
-  // Close modal and clear cart items
   const closeSuccessModal = () => {
     setShowSuccessModal(false);
-    setSelectedProduct([]); // Clear cart items
+    setSelectedProduct([]); 
   };
+
+  useEffect(() => {
+    document.title="DashBoard | Cart"
+  },[])
 
   return (
     <>

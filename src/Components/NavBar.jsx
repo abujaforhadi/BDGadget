@@ -31,6 +31,9 @@ function NavBar() {
               <li>
                 <NavLink to="/dashboard">Dashboard</NavLink>
               </li>
+              <li>
+                <NavLink to="/faq">FAQ</NavLink>
+              </li>
             </ul>
           </div>
           <Link to="/" className=" text-xl ml-2 ">
@@ -47,6 +50,9 @@ function NavBar() {
             </li>
             <li>
               <NavLink to="/dashboard">Dashboard</NavLink>
+            </li>
+            <li>
+              <NavLink to="/faq">FAQ</NavLink>
             </li>
           </ul>
         </div>

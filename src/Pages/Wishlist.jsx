@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { WishlistItem } from "../MainLayout/MainLayout";
 import WishlistContainer from "../Components/WishlistContainer";
 import { IoShieldCheckmarkSharp } from "react-icons/io5";
@@ -26,6 +26,10 @@ function Wishlist() {
     setShowSuccessModal(false);
     setWishlistProduct([]);
   };
+
+  useEffect(() => {
+    document.title="DashBoard | Wishlist"
+  },[])
 
   return (
     <>

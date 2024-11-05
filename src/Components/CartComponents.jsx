@@ -1,18 +1,17 @@
 import { RiDeleteBinFill } from "react-icons/ri";
 import { SelectedItem } from "../MainLayout/MainLayout";
 import { useContext } from "react";
-import { useParams } from "react-router-dom";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function CartComponents({ p }) {
   const [selectedProduct, setSelectedProduct] = useContext(SelectedItem);
-  const path=useParams()
-  console.log(path);
-
+  
   const { product_id, product_title, description, price, product_image } = p;
 
-  // Handler to remove item
   const handleRemoveItem = () => {
     setSelectedProduct(selectedProduct.filter((item) => item.product_id !== product_id));
+    toast.error(`${product_title} has been removed from the cart`);
   };
 
   return (
