@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { AiOutlineShoppingCart, AiOutlineUnorderedList } from "react-icons/ai";
 import { GiSelfLove } from "react-icons/gi";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { SelectedItem, WishlistItem } from "../MainLayout/MainLayout";
 
 function NavBar() {
@@ -20,7 +20,7 @@ function NavBar() {
 
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content  rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
               <li>
                 <NavLink to="/">Home </NavLink>

@@ -12,7 +12,7 @@ function SingleProduct() {
   return (
     <>
       <div className="w-2/3 mx-auto bg-white rounded-lg shadow-md p-4">
-        {product ? (
+        { 
           <div className="flex text-black">
             <div className="flex-1">
               <img
@@ -78,9 +78,7 @@ function SingleProduct() {
               </div>
             </div>
           </div>
-        ) : (
-          <p>Product not found</p>
-        )}
+        }
       </div>
     </>
   );

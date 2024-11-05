@@ -1,6 +1,6 @@
 
 import { RiDeleteBinFill } from "react-icons/ri";
-import { SelectedItem, WishlistItem } from "../MainLayout/MainLayout";
+import {  WishlistItem } from "../MainLayout/MainLayout";
 import { useContext } from "react";
 import { useParams } from "react-router-dom";
 

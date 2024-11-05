@@ -21,7 +21,7 @@ function CartComponents({ p }) {
         <img className="w-1/12" src={product_image} alt={product_title} />
 
         <div>
-          <h1>{product_title}</h1>
+          <h1 className="text-customPurple font-medium text-xl">{product_title}</h1>
           <p className="text-xs">{description}</p>
           <p>Price: ${price}</p>
         </div>

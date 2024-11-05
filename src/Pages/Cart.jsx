@@ -1,6 +1,7 @@
 import { useContext, useState } from "react";
 import { SelectedItem } from "../MainLayout/MainLayout";
 import CartComponents from "../Components/CartComponents";
+import { IoShieldCheckmarkSharp } from "react-icons/io5";
 
 function Cart() {
   const [selectedProduct, setSelectedProduct] = useContext(SelectedItem);
@@ -33,7 +34,7 @@ function Cart() {
       <div>
         <div className="px-5">
           <div className="flex justify-between py-5">
-            <h1>Cart</h1>
+            <h1 className="text-customPurple font-bold text-2xl">Cart</h1>
             <div className="flex gap-1 items-center">
               <h2>Total cost: ${showSuccessModal ? "0.00" : totalCost.toFixed(2)}</h2>
               <button onClick={handleSortByPrice} className="btn btn-outline text-customPurple">
@@ -58,20 +59,8 @@ function Cart() {
           <div className="bg-white p-6 rounded-lg shadow-lg text-center w-80">
             <div className="flex justify-center mb-4">
               <div className="bg-green-100 p-3 rounded-full">
-                <svg
-                  className="h-8 w-8 text-green-500"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
+              <IoShieldCheckmarkSharp />
+
               </div>
             </div>
             <h2 className="text-xl font-semibold">Payment Successfully</h2>
