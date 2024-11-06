@@ -1,21 +1,29 @@
-
-import { RiDeleteBinFill } from "react-icons/ri";
-import {  WishlistItem } from "../MainLayout/MainLayout";
+import { SelectedItem, WishlistItem } from "../MainLayout/MainLayout";
 import { useContext } from "react";
-import { useParams } from "react-router-dom";
 import { toast } from "react-toastify";
+import { MdOutlineShoppingCartCheckout } from "react-icons/md";
+import { RiDeleteBinFill } from "react-icons/ri";
 
 function WishlistContainer({ p }) {
-    const [wishlistProduct, setWishlistProduct] = useContext(WishlistItem);
-    const path=useParams()
-  console.log(path);
+  const [wishlistProduct, setWishlistProduct] = useContext(WishlistItem);
+  const [selectedProduct, setSelectedProduct] = useContext(SelectedItem);
 
   const { product_id, product_title, description, price, product_image } = p;
-
-  // Handler to remove item
+  const handleAddItem = () => {
+    if (!selectedProduct.some((item) => item.product_id === product_id)) {
+      setSelectedProduct([...selectedProduct, p]);
+      toast.success("Added to cart!");
+      setWishlistProduct(
+        wishlistProduct.filter((item) => item.product_id !== product_id)
+      );
+    } else {
+      toast.warning("Already added to cart");
+    }
+  };
   const handleRemoveItem = () => {
-    setWishlistProduct(wishlistProduct.filter((item) => item.product_id !== product_id));
-    toast.error(`${product_title} has been removed from the wishlist`);
+    setWishlistProduct(
+      wishlistProduct.filter((item) => item.product_id !== product_id)
+    );
   };
 
   return (
@@ -29,9 +37,17 @@ function WishlistContainer({ p }) {
           <p>Price: ${price}</p>
         </div>
       </div>
-      <button onClick={handleRemoveItem} className="btn btn-error text-white">
-        <RiDeleteBinFill />
-      </button>
+      <div className="flex gap-1">
+        <button
+          onClick={handleAddItem}
+          className="btn btn-primary bg-customPurple text-white"
+        >
+          Add to <MdOutlineShoppingCartCheckout />
+        </button>
+        <button onClick={handleRemoveItem} className="btn btn-error text-white">
+          <RiDeleteBinFill />
+        </button>
+      </div>
     </div>
   );
 }

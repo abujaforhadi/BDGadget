@@ -1,11 +1,9 @@
 import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import Card from "./Card";
-import { TbError404 } from "react-icons/tb";
 
 const CardContainer = () => {
   const obj = useParams();
-  console.log(obj);
 
   const product = useLoaderData();
   const [products, setProducts] = useState([]);

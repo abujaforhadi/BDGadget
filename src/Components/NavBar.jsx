@@ -36,7 +36,7 @@ function NavBar() {
               </li>
             </ul>
           </div>
-          <Link to="/" className=" text-xl ml-2 ">
+          <Link to="/" className=" text-2xl ml-2 font-bold">
             <span className="text-red-300">BD</span>Gadget
           </Link>
         </div>

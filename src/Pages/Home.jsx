@@ -24,8 +24,8 @@ function Home() {
       </h1>
       <div className="grid grid-cols-1 md:flex gap-4">
         {/* Dynamic Category Items */}
-        <div className="w-1/4 px-2">
-          <div className="grid gap-2 justify-center items-center">
+        <div className="md:w-1/4 px-2">
+          <div className="grid grid-cols-3 md:grid-cols-1 gap-2  justify-center items-center">
            
             <NavLink
               to="/categories"
@@ -56,7 +56,7 @@ function Home() {
         </div>
 
         {/* Product Cards */}
-        <div className="w-3/4">
+        <div className="md:w-3/4">
           <div key={location.pathname}> {/* Force re-render based on path */}
             <Outlet />
           </div>
