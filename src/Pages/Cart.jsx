@@ -43,7 +43,11 @@ function Cart() {
               <button onClick={handleSortByPrice} className="btn btn-outline text-customPurple">
                 Sort by Price
               </button>
-              <button onClick={handlePurchaseClick} className="btn bg-customPurple text-white">
+              <button
+                onClick={handlePurchaseClick}
+                className="btn bg-customPurple text-white"
+                disabled={selectedProduct.length === 0 || totalCost === 0}
+              >
                 Purchase
               </button>
             </div>
