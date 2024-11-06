@@ -41,15 +41,17 @@ const CardContainer = () => {
           </div>
         )}
       </div>
+      <div className="py-5 flex justify-center">
       {products.length > 0 &&
         (obj.category
           ? products.length <
             product.filter((p) => p.category === obj.category).length
           : products.length < product.length) && (
-          <button className="btn" onClick={handleViewAll}>
-            View All
+          <button className="btn btn-outline text-customPurple " onClick={handleViewAll}>
+            Show All Products
           </button>
         )}
+      </div>
     </>
   );
 };

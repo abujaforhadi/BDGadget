@@ -2,10 +2,13 @@ import { useContext, useEffect, useState } from "react";
 import { WishlistItem } from "../MainLayout/MainLayout";
 import WishlistContainer from "../Components/WishlistContainer";
 import { IoShieldCheckmarkSharp } from "react-icons/io5";
+import { useNavigate } from "react-router-dom";
 function Wishlist() {
   const [wishlistProduct, setWishlistProduct] = useContext(WishlistItem);
   const [isSorted, setIsSorted] = useState(false);
   const [showSuccessModal, setShowSuccessModal] = useState(false);
+  const navigate = useNavigate();
+
 
   const handleSortByPrice = () => {
     const sortedWishlist = [...wishlistProduct].sort((a, b) => b.price - a.price);
@@ -25,6 +28,8 @@ function Wishlist() {
   const closeSuccessModal = () => {
     setShowSuccessModal(false);
     setWishlistProduct([]);
+    navigate("/");
+
   };
 
   useEffect(() => {

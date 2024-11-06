@@ -2,11 +2,13 @@ import { useContext, useEffect, useState } from "react";
 import { SelectedItem } from "../MainLayout/MainLayout";
 import CartComponents from "../Components/CartComponents";
 import { IoShieldCheckmarkSharp } from "react-icons/io5";
+import { useNavigate } from "react-router-dom";
 
 function Cart() {
   const [selectedProduct, setSelectedProduct] = useContext(SelectedItem);
   const [isSorted, setIsSorted] = useState(false);
   const [showSuccessModal, setShowSuccessModal] = useState(false);
+  const navigate = useNavigate();
 
   const handleSortByPrice = () => {
     const sortedProducts = [...selectedProduct].sort((a, b) => b.price - a.price);
@@ -23,6 +25,7 @@ function Cart() {
   const closeSuccessModal = () => {
     setShowSuccessModal(false);
     setSelectedProduct([]); 
+    navigate("/");
   };
 
   useEffect(() => {
