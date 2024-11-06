@@ -7,7 +7,7 @@ function Hero() {
         <div className="hero-content text-center">
           <div className="w-2/3 mx-auto">
             <h1 className="text-5xl font-bold py-8">
-              Upgrade Your Tech Accessorize with Gadget Heaven Accessories
+              Upgrade Your Tech Accessorize with BD Gadget Accessories
             </h1>
             <p className="py-7 font-normal text-xs">
               Explore the latest gadgets that will take your experience to the
