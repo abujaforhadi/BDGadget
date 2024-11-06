@@ -54,9 +54,13 @@ function Wishlist() {
           </div>
         </div>
         <div>
-          {wishlistProduct.map((p) => (
-            <WishlistContainer key={p.product_id} p={p} />
-          ))}
+          {wishlistProduct.length === 0 ? (
+            <p className="text-center text-3xl text-customPurple mt-10">Your wishlist is empty.</p>
+          ) : (
+            wishlistProduct.map((p) => (
+              <WishlistContainer key={p.product_id} p={p} />
+            ))
+          )}
         </div>
       </div>
 
