@@ -2,7 +2,8 @@
 
 **Live Website**: [BDGadget](https://bdgadget.netlify.app/)  
 ## Additional Information
-**Requirement Document**: [BDGadget Requirements](<link_to_requirement_document>)
+**Requirement Document**: [Requirement Document.pdf](https://github.com/user-attachments/files/17644009/Requirement.Document.pdf)
+
 
 ---
 
