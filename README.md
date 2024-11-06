@@ -1,6 +1,8 @@
-# BDGadget - GadgetHeaven✨
+# BDGadget✨
 
 **Live Website**: [BDGadget](https://bdgadget.netlify.app/)  
+## Additional Information
+**Requirement Document**: [BDGadget Requirements](<link_to_requirement_document>)
 
 ---
 
@@ -52,4 +54,4 @@
 ## Installation & Setup
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/BDGadget.git
+   git clone https://github.com/programming-hero-web-course-4/b10a8-gadget-heaven-abujaforhadi.git
