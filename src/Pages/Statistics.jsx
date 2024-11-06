@@ -5,14 +5,14 @@ import Heading from "../Components/Heading";
 function Statistics() {
 
   useEffect(() => {
-    document.title="Statistics"
+    document.title="Statistics | BDGadget"
   },[])
 
   return (
     <div>
       <div className="bg-customPurple py-5">
         <Heading
-          title="Statistics"
+          title="Statistics | BDGadget"
           subTitle="Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!"
         />
       </div>

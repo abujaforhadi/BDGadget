@@ -6,7 +6,7 @@ import { useEffect } from "react";
 function Dashboard() {
   const location = useLocation();
   useEffect(() => {
-    document.title="DashBoard"
+    document.title="DashBoard | BDGadget"
   },[])
 
   return (

@@ -1,19 +1,26 @@
-import { FcFaq } from "react-icons/fc";
+import { useEffect } from "react";
 import Heading from "../Components/Heading";
 
 function Faq() {
+  useEffect(() => {
+    document.title="FAQ | BDGadget"
+  },[])
   return (
     <div className="">
-      <div className="bg-customPurple py-4 pb-10 ">
-        
+      <div className="bg-customPurple py-4 pb-32 ">
+      <div className="py-5 flex justify-center">
+            <img className="w-1/5 rounded-lg" src="https://cdn.shopify.com/app-store/listing_images/be8e18fe7fd62b265563360c2986633d/promotional_image/CLHpktmI5_QCEAE=.jpeg?height=720&quality=90&width=1280" alt="" />
+          </div>
         <Heading
           title="FAQ"
           subTitle="Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!"
         />
+        
       </div>
 
-      <div className="flex justify-center ">
-        <div className=" flex absolute -mt-8  flex-col bp-20 gap-4 bg-white rounded-lg">
+      <div className="flex justify-center pb-96">
+        <div className=" flex absolute -mt-20  flex-col p-4  gap-4 bg-white rounded-lg">
+          
           <div className="collapse collapse-arrow bg-base-200">
             <input type="radio" name="my-accordion-2" defaultChecked />
             <div className="collapse-title text-xl font-medium">
