@@ -1,6 +1,13 @@
+import { useNavigate } from "react-router-dom";
 import HeaderImage from "./HeaderImage";
 
 function Hero() {
+  const navigate = useNavigate();
+
+  const handleShopNowClick = () => {
+    navigate("/dashboard");
+  };
+
   return (
     <div className="relative">
       <div className="hero bg-customPurple text-white rounded-b-3xl pb-24 md:pb-36">
@@ -14,7 +21,10 @@ function Hero() {
               next level. From smart devices to <br /> the coolest accessories,
               we have it all!
             </p>
-            <button className="btn bg-white text-customPurple border border-sky-100 px-8 py-3 rounded-xl shadow-lg hover:bg-gray-200">
+            <button
+              className="btn bg-white text-customPurple border border-sky-100 px-8 py-3 rounded-xl shadow-lg hover:bg-gray-200"
+              onClick={handleShopNowClick}
+            >
               Shop Now
             </button>
           </div>
