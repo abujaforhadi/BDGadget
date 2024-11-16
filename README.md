@@ -55,4 +55,15 @@
 ## Installation & Setup
 1. Clone the repository:
    ```bash
-   git clone https://github.com/programming-hero-web-course-4/b10a8-gadget-heaven-abujaforhadi.git
+   git clone https://github.com/abujaforhadi/BDGadget.git
+
+
+
+
+
+
+
+
+
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/29285403-a6f3-4ecc-a1a5-b12482a4fb85/deploy-status)](https://app.netlify.com/sites/bdgadget/deploys)
