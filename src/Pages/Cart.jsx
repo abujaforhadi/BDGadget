@@ -11,7 +11,7 @@ function Cart() {
   const navigate = useNavigate();
 
   const handleSortByPrice = () => {
-    const sortedProducts = [...selectedProduct].sort((a, b) => b.price - a.price);
+    const sortedProducts = [...selectedProduct].sort((a, b) => a.price - b.price);
     setSelectedProduct(sortedProducts);
     setIsSorted(true);
   };
