@@ -38,13 +38,13 @@ const BarChartPage = () => {
               dataKey="product_title"
               stroke="#4a5568"
               tick={{ fontSize: 10 }}
-              angle={-45}
+              angle={-10}
               textAnchor="end"
               interval={0} // Ensures every label is shown
             />
             <YAxis />
             <Tooltip />
-            <Bar dataKey="price" fill="#4a5568" barSize={20} />
+            <Bar dataKey="price" fill="#9538E2" barSize={20} />
           </BarChart>
         </ResponsiveContainer>
       </div>
