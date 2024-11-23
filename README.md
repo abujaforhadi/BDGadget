@@ -18,7 +18,7 @@
 ---
 
 ## Project Description
-**BDGadget - GadgetHeaven** is a responsive e-commerce platform for gadget enthusiasts. The platform includes features like structured navigation, product categories, detailed product pages, a shopping cart, and a wishlist. Built on a detailed Figma design, **BDGadget** offers a smooth, interactive shopping experience with Context API and LocalStorage for efficient state and data management.
+**BDGadget ** is a responsive e-commerce platform for gadget enthusiasts. The platform includes features like structured navigation, product categories, detailed product pages, a shopping cart, and a wishlist. Built on a detailed Figma design, **BDGadget** offers a smooth, interactive shopping experience with Context API and LocalStorage for efficient state and data management.
 
 ---
 
